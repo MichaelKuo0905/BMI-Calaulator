@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="header">
+        
+        <div class="logo">
+            <img src="img/BMICLogo.png" alt="">
+        </div>
+        <div class="input_class">
+            <h2>身高 cm</h2>
+            <input type="text" class="inpHclass" placeholder="請輸入身高">
+            <h2>體重 kg</h2>
+            <input type="text" class="inpWclass" placeholder="請輸入體重">
+        </div>
+
+        <button type="button" class="btnclass" id="btnID">
+            <p class="value">看結果</p>
+            <p class='bmi'> </p>
+            <div class='icon'></div>
+        </button>
+    </div>
+    <div class="content">
+        <h2 style="text-align:center; font-size:24px;padding:20px">BMI 紀錄表</h2>
+        <!-- <ul class="greenlist">
+            <li class="status">理想</li>
+            <li class="bmivalue"><span>BMI</span> 22</li>
+            <li class="height"><span>height</span> 174cm</li>
+            <li class="weight"><span>weight</span>68kg </li>
+        </ul>
+        <ul class="redlist">
+            <li class="status">理想</li>
+            <li class="bmivalue"><span>BMI</span> 22</li>
+            <li class="height"><span>height</span> 174cm</li>
+            <li class="weight"><span>weight</span>68kg </li>
+        </ul> -->
+        <div class="contentlist"></div>
+    </div>
+    <div class="bottom">
+        <div class="bottom_img"></div>
+    </div>
+    <script src="js/all.js"></script>
+</body>
+</html>

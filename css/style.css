@@ -1,0 +1,483 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.header{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin:0 auto;
+    background:#424242;
+}
+.logo{
+    padding-top:90px; 
+    padding-bottom:90px;
+}
+.input_class h2{
+    font-size:18px;
+    color:#FFD366;   
+}
+.inpHclass{
+    background:#424242;
+    font-size:30px;
+    color:#FFD366;
+    border-radius:5px;
+    border:5px solid #FFD366;
+    margin-top:5px;
+    margin-bottom:20px;
+
+}
+.inpWclass{
+    background:#424242;
+    font-size:30px;
+    color:#FFD366;
+    border-radius:5px ;
+    border:5px solid #FFD366;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+p {
+    height:50px;
+}
+
+/********************** 按鈕 ********************/
+.btnclass{
+    width: 150px;
+	height: 150px;
+	line-height: 150px;
+    border-radius: 150px;
+    background: #FFD366;
+    position: relative;
+}
+.btnclass .value{
+    color:black;
+    font-size:32px;
+    position:absolute;
+    left: 28px;
+    top:0px;
+}
+.btnclass:hover{
+    box-shadow: #FFC431 3px 3px 15px 0px; 
+}
+.btnclass:active{
+    background:#DEA921;
+}
+
+
+/* 綠色部分 */
+.greenbtn{
+    width: 150px;
+	height: 150px;
+	line-height: 150px;
+    border-radius: 150px;
+    border:2px solid #86D73E;
+    background:#424242; 
+    position:relative;    
+}
+.greenbtn .value{
+    color:#86D73E;
+    font-size:32px;
+    position:absolute;
+    left: 30px;
+    top:-5px;
+
+}
+.greenbtn .bmi{
+    color:#86D73E;
+    font-size:16px;
+    position:absolute;
+    left: 55px;
+    top: 35px;
+    
+}
+.greenbtn .icon{
+    background-image: url('../img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    position:absolute;
+    top:110px;
+    left:95px;
+    width: 30px;
+	height: 30px;
+	line-height: 30px;
+    border-radius: 50%;
+    border:5px solid #86D73E;
+    background-color:#86D73E;
+    cursor:pointer;
+}
+
+/*天空藍部分 */
+.bluebtn{
+    width: 150px;
+	height: 150px;
+	line-height: 150px;
+    border-radius: 150px;
+    border:2px solid #31BAF9;
+    background:#424242; 
+    position:relative;    
+}
+.bluebtn .value{
+    color:#31BAF9;
+    font-size:32px;
+    position:absolute;
+    left: 30px;
+    top:-5px;
+
+}
+.bluebtn .bmi{
+    color:#31BAF9;
+    font-size:16px;
+    position:absolute;
+    left: 55px;
+    top: 35px;
+    
+}
+.bluebtn .icon{
+    background-image: url('../img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    position:absolute;
+    top:110px;
+    left:95px;
+    width: 30px;
+	height: 30px;
+	line-height: 30px;
+    border-radius: 50%;
+    border:5px solid #31BAF9;
+    background-color:#31BAF9;
+    cursor:pointer;
+}
+/* 亮橘色 過重 */
+.brorgbtn{
+    width: 150px;
+	height: 150px;
+	line-height: 150px;
+    border-radius: 150px;
+    border:2px solid #FF982D;
+    background:#424242; 
+    position:relative;    
+}
+.brorgbtn .value{
+    color:#FF982D;
+    font-size:32px;
+    position:absolute;
+    left: 30px;
+    top:-5px;
+
+}
+.brorgbtn .bmi{
+    color:#FF982D;
+    font-size:16px;
+    position:absolute;
+    left: 55px;
+    top: 35px;
+    
+}
+.brorgbtn .icon{
+    background-image: url('../img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    position:absolute;
+    top:110px;
+    left:95px;
+    width: 30px;
+	height: 30px;
+	line-height: 30px;
+    border-radius: 50%;
+    border:5px solid #FF982D;
+    background-color:#FF982D;
+    cursor:pointer;
+}
+/* 橘色 輕度肥胖與中度肥胖 */
+.orgbtn{
+    width: 150px;
+	height: 150px;
+	line-height: 150px;
+    border-radius: 150px;
+    border:2px solid #FF6C02;
+    background:#424242; 
+    position:relative;    
+}
+.orgbtn .value{
+    color:#FF6C02;
+    font-size:32px;
+    position:absolute;
+    left: 30px;
+    top:-5px;
+
+}
+.orgbtn .bmi{
+    color:#FF6C02;
+    font-size:16px;
+    position:absolute;
+    left: 55px;
+    top: 35px;
+    
+}
+.orgbtn .icon{
+    background-image: url('../img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    position:absolute;
+    top:110px;
+    left:95px;
+    width: 30px;
+	height: 30px;
+	line-height: 30px;
+    border-radius: 50%;
+    border:5px solid #FF6C02;
+    background-color:#FF6C02;
+    cursor:pointer;
+}
+/* 紅色 重度肥胖 */
+.redbtn{
+    width: 150px;
+	height: 150px;
+	line-height: 150px;
+    border-radius: 150px;
+    border:2px solid #FF1200 ;
+    background:#424242; 
+    position:relative;    
+}
+.redbtn .value{
+    color:#FF1200 ;
+    font-size:32px;
+    position:absolute;
+    left: 30px;
+    top:-5px;
+
+}
+.redbtn .bmi{
+    color:#FF1200 ;
+    font-size:16px;
+    position:absolute;
+    left: 55px;
+    top: 35px;
+    
+}
+.redbtn .icon{
+    background-image: url('../img/icons_loop.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    position:absolute;
+    top:110px;
+    left:95px;
+    width: 30px;
+	height: 30px;
+	line-height: 30px;
+    border-radius: 50%;
+    border:5px solid #FF1200 ;
+    background-color:#FF1200 ;
+    cursor:pointer;
+}
+.content{
+    background:#f5f5f5;
+    width:100%;
+    margin:0 auto;
+}
+span{
+    font-size:10px;
+    padding-right: 10px;
+}
+
+/* ******* greenlist ************* */
+.greenlist{
+    background:#ffffff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:624px;
+    height:62px;
+    margin:0 auto;
+    text-align:center;
+    border-left:10px solid #89db3f;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.greenlist .status{
+    font-size:22px;
+}
+.greenlist .bmivalue{
+    font-size:22px;
+}
+.greenlist .height{
+    font-size:22px;
+}
+.greenlist .weight{
+    font-size:22px;
+}
+
+/* ******* skybluelist ************* */
+.skybluelist{
+    background:#ffffff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:624px;
+    height:62px;
+    margin:0 auto;
+    text-align:center;
+    border-left:10px solid #39b9f9;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.skybluelist .status{
+    font-size:22px;
+}
+.skybluelist .bmivalue{
+    font-size:22px;
+}
+.skybluelist .height{
+    font-size:22px;
+}
+.skybluelist .weight{
+    font-size:22px;
+}
+
+/* ******* bright orange list ************* */
+.brorglist{
+    background:#ffffff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:624px;
+    height:62px;
+    margin:0 auto;
+    text-align:center;
+    border-left:10px solid #fd972f;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.brorglist .status{
+    font-size:22px;
+}
+.brorglist .bmivalue{
+    font-size:22px;
+}
+.brorglist .height{
+    font-size:22px;
+}
+.brorglist .weight{
+    font-size:22px;
+}
+
+/* ******* orange list ************* */
+.orglist{
+    background:#ffffff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:624px;
+    height:62px;
+    margin:0 auto;
+    text-align:center;
+    border-left:10px solid #fd6809;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.orglist .status{
+    font-size:22px;
+}
+.orglist .bmivalue{
+    font-size:22px;
+}
+.orglist .height{
+    font-size:22px;
+}
+.orglist .weight{
+    font-size:22px;
+}
+/* ******* red list ************* */
+.redlist{
+    background:#ffffff;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:624px;
+    height:62px;
+    margin:0 auto;
+    text-align:center;
+    border-left:10px solid #fc0006;
+    margin-top:10px;
+    margin-bottom:20px;
+    
+}
+.redlist .status{
+    font-size:22px;
+}
+.redlist .bmivalue{
+    font-size:22px;
+}
+.redlist .height{
+    font-size:22px;
+}
+.redlist .weight{
+    font-size:22px;
+}
+
+.bottom{
+    background:#FFD366;
+    width:100%;
+    height:100px;
+    
+}
+.bottom_img{
+    background-image: url('../img/BMICLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width:50px;
+    height:50px;
+    padding-top:50px;
+    margin:0 auto;
+    filter: brightness(20%);
+
+}
