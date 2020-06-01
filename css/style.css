@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 .header{
+    max-width:100%;
     display:flex;
     justify-content:space-evenly;
     align-items: center;
@@ -314,6 +315,70 @@ p {
     background-color:#FF1200 ;
     cursor:pointer;
 }
+
+@media(max-width:375px){
+    .logo img{
+        display:none;
+    }
+    .input_class h2{
+        font-size:5px;
+    }
+    .inpHclass,.inpWclass{
+        font-size:20px;
+    }
+    .btnclass,.greenbtn,.bluebtn,.brorgbtn,.orgbtn,.redbtn{
+        width:100px;
+        height:100px;
+    }
+    .greenbtn,.bluebtn,.brorgbtn,.orgbtn,.redbtn{
+        width:80px;
+        height:80px;
+
+    }
+    .btnclass .value{
+        font-size:20px;
+        top:-22px;
+        left:20px;
+    }
+    .greenbtn .value,.bluebtn .value,.brorgbtn .value,.orgbtn .value, .redbtn .value{
+        font-size:16px;
+        top:-38px;
+        left:19px;
+    }
+    
+    .greenbtn .bmi,.bluebtn .bmi, .brorgbtn .bmi,.orgbtn .bmi, .redbtn .bmi{
+        font-size:12px;
+        left: 29px;
+        top: -15px;
+    }
+    .bluebtn .icon,.greenbtn .icon, .brorgbtn .icon, .orgbtn .icon, .redbtn .icon{
+        top: 69px;
+        left: 28px;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 80%;
+       
+    }
+    .bluebtn .icon{
+        border: 2px solid #31BAF9;
+    }
+    .greenbtn .icon{
+        border: 2px solid #86D73E;
+    }
+    .brorgbtn .icon{
+        border: 2px solid #FF982D;
+    }
+    .orgbtn .icon{
+        border: 2px solid #FF6C02;
+    }
+    
+    .rednbtn .icon{
+        border: 2px solid #FF1200;
+    }
+    
+
+}
 .content{
     background:#f5f5f5;
     width:100%;
@@ -340,15 +405,6 @@ span{
     
 }
 .greenlist .status{
-    font-size:22px;
-}
-.greenlist .bmivalue{
-    font-size:22px;
-}
-.greenlist .height{
-    font-size:22px;
-}
-.greenlist .weight{
     font-size:22px;
 }
 
@@ -469,6 +525,28 @@ span{
     height:100px;
     
 }
+
+@media(max-width:375px){
+    .greenlist,.skybluelist,.brorglist,.orglist,.redlist{
+        width:100%
+    }
+    .greenlist .status,.skybluelist .status,.brorglist .status, .orglist .status, .redlist .status{
+        font-size:10px;
+    }
+     .greenlist .bmivalue,.skybluelist .bmivalue,.brorglist .bmivalue, .orglist .bmivalue,.redlist .bmivalue {
+        font-size:10px;
+    }
+    .greenlist .height,.skybluelist .height,.brorglist .height, .orglist .height,.redlist .height  {
+        font-size:10px;
+    }
+    .greenlist .weight,.skybluelist .weight,.brorglist .weight, .orglist .weight,.redlist .weight{
+        font-size:10px;
+    }
+    .Timestyle{
+        font-size:9px;
+    }
+}
+
 .bottom_img{
     background-image: url('../img/BMICLogo.png');
     background-repeat: no-repeat;
