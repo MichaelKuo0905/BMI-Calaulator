@@ -156,7 +156,7 @@ function updateList(){
             color="redlist";
             status="重度肥胖";
         }
-        str+='<ul  class="'+color+'"id="colorID"><li class="status">'+status+'</li><li class="bmivalue"><span>BMI</span>'+getBMIAry[i]+'</li><li class="height"><span>height</span>'+getHDataAry[i]+'</li><li class="weight"><span>weight</span>'+getWDataAry[i]+' </li><li>'+getTimeAry[i]+'<li></ul>'
+        str+='<ul  class="'+color+'"id="colorID"><li class="status">'+status+'</li><li class="bmivalue"><span>BMI</span>'+getBMIAry[i]+'</li><li class="height"><span>height</span>'+getHDataAry[i]+'</li><li class="weight"><span>weight</span>'+getWDataAry[i]+' </li><li class="Timestyle">'+getTimeAry[i]+'<li></ul>'
         // document.querySelector('.status').textContent=status;
         // document.getElementById('colorID').setAttribute('class',color);
         }
